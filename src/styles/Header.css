@@ -1,0 +1,133 @@
+/* header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-image: linear-gradient(to right, #1d91a2, transparent);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: #00d8ff;
+  -webkit-text-stroke: 1px black;
+}
+
+h2 {
+  color: #00d8ff;
+  margin: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px black;
+} */
+
+
+header {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 0 20px;
+    background-image: linear-gradient(to right, #1d91a2, transparent);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+.navigation-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px;
+  gap: 20px;
+}
+
+.navigation-div span {
+  color: #00d8ff;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+  -webkit-text-stroke: 0.5px black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.navigation-div span:hover {
+  transform: scale(1.25);
+  color: black;
+  -webkit-text-stroke: 0.5px #00d8ff;
+}
+
+h1 {
+  margin: .5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #00d8ff;
+  -webkit-text-stroke: 1px black;
+}
+
+h2 {
+  color: #00d8ff;
+  margin: 0.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  -webkit-text-stroke: 0.35px black;
+  /* Key addition for fade effect: Smooth transition for opacity changes */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Class to make the H2 text fully visible */
+.fade-in {
+  opacity: 1;
+}
+
+/* Class to make the H2 text fully transparent/hidden */
+.fade-out {
+  opacity: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 50px;
+    padding: 0 10px;
+    flex-direction: column; /* Stack h1 and h2 vertically */
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.1em;
+    margin-top: 5px; /* Adjust margin for stacked elements */
+  }
+}
+  
