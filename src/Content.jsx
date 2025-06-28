@@ -141,7 +141,7 @@ const Content = () => {
     ];
 
 
-    return { tableOfContents, bonus, aboutMe, experience, contact, education };
-};
+  return { tableOfContents, bonus, aboutMe, experience, contact, education }
+}
 
 export default Content;
