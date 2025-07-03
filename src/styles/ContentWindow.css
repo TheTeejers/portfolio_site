@@ -328,6 +328,134 @@ a {
   .content-window {
     width: 100%;
     border-radius: 10px;
+    margin-top: 0;
     
+  }
+  .content-container {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+  }
+  .content-container h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    text-align: left;
+  }
+  .content-container h2 {
+    font-size: 1.1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .content-container h3 {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .content-container h4 {
+    font-size: 0.9rem;
+    padding: 0.1rem 0 0.25rem 0;
+    text-align: left;
+    line-height: 1.4;
+  }
+  .content-container p {
+    font-size: 0.85rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    text-indent: 1rem;
+    line-height: 1.6;
+  }
+  .title-dates {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.25rem 0;
+    gap: 0.1rem;
+    font-size: .75rem;
+
+  }
+  .content-container ul {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .content-container li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+  .institution-container {
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,216,255,0.2);
+  }
+  .institution-info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .institution-name {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    text-align: left;
+    word-break: break-word;
+    line-height: 1.75;
+  }
+  .institution-degree {
+    font-size: 0.9rem;
+    padding: 0.1rem 0 0.25rem 0;
+    text-align: left;
+    line-height: 1.75;
+  }
+  .institution-container p {
+    font-size: 0.8rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    text-indent: 1rem;
+    line-height: 1.5;
+  }
+  .contact-container {
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    width: 100%;
+  }
+  .contact-container h1 {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    text-align: left;
+  }
+  .contact-container h2 {
+    font-size: 1.1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: left;
+    line-height: 1.5;
+  }
+  .contact-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    border-radius: 0.75rem;
+    background: rgba(0,216,255,0.08);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .icon:focus, .icon:hover {
+    background: #00d8ff;
+    outline: 2px solid #fff;
+    transform: scale(1.15);
+  }
+  .contact-text {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 0 0.5rem;
   }
 }

@@ -57,7 +57,7 @@ const Content = () => {
         title: 'Experience',
         experiences: [
             {
-            company: 'SubjectWell, Austin, Texas',
+            company: 'SubjectWell',
             website: 'https://www.subjectwell.com/',
             title: 'Associate Software Engineer',
             dates: 'April 2022 - July 2024',
@@ -68,7 +68,7 @@ const Content = () => {
             ]
         },
         {
-            company: 'Sauce Labs, Austin, Texas',
+            company: 'Sauce Labs',
             website: 'https://www.saucelabs.com/',
             title: 'Customer Support Engineer',
             dates: 'November 2018 - April 2022',
@@ -89,7 +89,7 @@ const Content = () => {
             ]
         },
         {
-            company: 'Ecor Ventures, Austin, Texas',
+            company: 'Ecor Ventures',
             website: 'https://www.ecorventures.com/',
             title: 'Contract Software Engineer',
             dates: 'February 2018 - May 2018',
