@@ -111,7 +111,7 @@ const Header = ({ contentSelected, setContentSelected }) => {
         <span onClick={() => setContentSelected('About')} className={contentSelected === 'About' ? 'active' : 'inactive'}>About Me</span>
         <span onClick={() => setContentSelected('Experience')} className={contentSelected === 'Experience' ? 'active' : 'inactive'}>Experience</span>
         <span onClick={() => setContentSelected('Education')} className={contentSelected === 'Education' ? 'active' : 'inactive'}>Education</span>
-        <span onClick={() => setContentSelected('Projects')} className={contentSelected === 'Projects' ? 'active' : 'inactive'}>Projects</span>
+        {/* <span onClick={() => setContentSelected('Projects')} className={contentSelected === 'Projects' ? 'active' : 'inactive'}>Projects</span> */}
         <span onClick={() => setContentSelected('Contact')} className={contentSelected === 'Contact' ? 'active' : 'inactive'}>Contact</span>
       </div>
       {/* Hamburger Icon (mobile only) */}
@@ -142,7 +142,7 @@ const Header = ({ contentSelected, setContentSelected }) => {
             <li><button onClick={() => handleNav('About')} className={contentSelected === 'About' ? 'active' : ''}>About Me</button></li>
             <li><button onClick={() => handleNav('Experience')} className={contentSelected === 'Experience' ? 'active' : ''}>Experience</button></li>
             <li><button onClick={() => handleNav('Education')} className={contentSelected === 'Education' ? 'active' : ''}>Education</button></li>
-            <li><button onClick={() => handleNav('Projects')} className={contentSelected === 'Projects' ? 'active' : ''}>Projects</button></li>
+            {/* <li><button onClick={() => handleNav('Projects')} className={contentSelected === 'Projects' ? 'active' : ''}>Projects</button></li> */}
             <li><button onClick={() => handleNav('Contact')} className={contentSelected === 'Contact' ? 'active' : ''}>Contact</button></li>
           </ul>
         </nav>
