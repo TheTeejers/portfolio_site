@@ -3,10 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import Header from './components/Header.jsx'
 import ContentWindow from './components/ContentWindow.jsx'
-import './styles/App.css'
+
 
 const App = () => {
-  const [contentSelected, setContentSelected] = useState('About');
+  const [contentSelected, setContentSelected] = useState(null);
   
   return (
     <>

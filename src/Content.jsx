@@ -1,19 +1,21 @@
-
 const Content = () => {
 
     const contact = {
-        topicTitle: 'Contact Me',
-        myName: 'TJ Loughry',
+        title: 'Contact Me',
         email: 'tjloughry@gmail.com',
         phone: '512.826.6923',
         gitHub: 'https://github.com/TheTeejers',
         linkedIn: 'https://linkedin.com/in/tjloughry',
         faceBook: 'https://www.facebook.com/tj.loughry',
+        woodworkingInstagram: 'https://www.instagram.com/tjworkswood/',
+        woodworkingWebsite: 'https://www.tjworkswood.com/',
+        woodworkingEmail: 'tj@tjworkswood.com',
+        woodworkingYouTube: 'https://www.youtube.com/TJWorksWood',
       };
 
     const tableOfContents = {
         myName: 'TJ Loughry',
-        workTitle: ['Senior Support Engineer', 'Software Developer', 'Web Developer'],
+        workTitles: ['Support Engineer', 'Software Developer', 'Web Developer',  'Woodworker'],
 
         selfTopics: [
             { aboutMe: 'About Me' },
@@ -42,19 +44,21 @@ const Content = () => {
     const aboutMe = {
         title: 'About Me',
         aboutMeTopics: [
-            { '': `Hey there! I'm TJ Loughry, a Front-End Web Developer and Automation Testing Support Engineer based in Austin, Texas. I love creating user-friendly web applications and solving tricky tech problems.` },
-            { 'What I Do': <>At SubjectWell, I've tackled a ton of website issues, helped move our database to AWS, and made sure everything runs smoothly by keeping an eye on our Step and Lambda functions. Before that, at Sauce Labs, I helped customers with their Selenium/Appium testing, wrote helpful documentation, and managed the support queue. I even took on the role of Austin Office Lead/Manager, where I helped set up our office space and organized team events.</> },
-            { 'My Skills': <>I'm skilled in HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Python, Selenium, Appium, Vue.js, and Rails. I’ve got a knack for reviewing code, fixing issues, and making databases work better.</> },
-            { 'My Background': <>I studied Accounting at Midwestern State University and obtained an Associate of Science in Mathematics from Austin Community College. I also completed a Web Development Immersive program at General Assembly in Austin.</> },
+            { 'Hey There!': "I'm TJ Loughry, a Web Developer and Automation Testing Support Engineer based in Austin, Texas. I love creating user-friendly web applications and solving tricky tech problems." },
+            { 'What I Do': "At SubjectWell, I've tackled a ton of website issues, helped move our database to AWS, and made sure everything runs smoothly by keeping an eye on our Step and Lambda functions. Before that, at Sauce Labs, I helped customers with their Selenium/Appium testing, wrote helpful documentation, and managed the support queue. I even took on the role of Austin Office Lead/Manager, where I helped set up our office space and organized team events." },
+            { 'My Skills': "I'm skilled in HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Python, Selenium, Appium, Vue.js, and Rails. I've got a knack for reviewing code, fixing issues, and making databases work better." },
+            { 'My Background': "I studied Accounting at Midwestern State University and obtained an Associate of Science in Mathematics from Austin Community College. I also completed a Web Development Immersive program at General Assembly in Austin." },
   
 
         ],
     };
 
-    const experience = [
-        {topicTitle: 'Experience'},
-        {
+    const experience = {
+        title: 'Experience',
+        experiences: [
+            {
             company: 'SubjectWell, Austin, Texas',
+            website: 'https://www.subjectwell.com/',
             title: 'Associate Software Engineer',
             dates: 'April 2022 - July 2024',
             responsibilities: [
@@ -65,6 +69,7 @@ const Content = () => {
         },
         {
             company: 'Sauce Labs, Austin, Texas',
+            website: 'https://www.saucelabs.com/',
             title: 'Customer Support Engineer',
             dates: 'November 2018 - April 2022',
             responsibilities: [
@@ -75,6 +80,7 @@ const Content = () => {
         },
         {
             company: null,
+            website: null,
             title: 'Austin Office Lead/Manager',
             dates: 'January 2019 - April 2022',
             responsibilities: [
@@ -84,6 +90,7 @@ const Content = () => {
         },
         {
             company: 'Ecor Ventures, Austin, Texas',
+            website: 'https://www.ecorventures.com/',
             title: 'Contract Software Engineer',
             dates: 'February 2018 - May 2018',
             responsibilities: [
@@ -94,6 +101,7 @@ const Content = () => {
         },
         {
             company: 'Freemon, Shapard, & Story, CPAs',
+            website: 'https://www.fss.cpa/',
             title: 'Associate Accountant',
             dates: 'December 2016 - June 2017',
             responsibilities: [
@@ -103,6 +111,7 @@ const Content = () => {
         },
         {
             company: 'Scalco, Johnson, Leahy & Dudek CPAs PLLC',
+            website: 'https://www.sjld.cpa/',
             title: 'Associate Accountant',
             dates: 'June 2015 - December 2016',
             responsibilities: [
@@ -110,35 +119,46 @@ const Content = () => {
                 'Created work papers documenting the flow of information.'
             ]
         }
-    ];
+        ]
+    };
 
-    const education = [
-        {topicTitle: 'Education'},
+    const education = {
+        title: 'Education',
+        institutions: [
         {
-            school: 'General Assembly, Austin, Texas',
+            school: 'General Assembly',
+            location: 'Austin, Texas',
             program: 'Web Development Immersive Fellow',
             degree: 'Course Certificate',
-            details: 'Completed an intensive, hands-on program focused on full-stack web development, covering HTML, CSS, JavaScript, React, Node.js, and more.'
+            details: 'Completed an intensive, hands-on program focused on full-stack web development, covering HTML, CSS, JavaScript, React, Node.js, and more.',
+            website: 'https://generalassemb.ly/'
         },
         {
-            school: 'Midwestern State University, Wichita Falls, Texas',
-            program: null,
+            school: 'Midwestern State University',
+            location: 'Wichita Falls, Texas',
+            program: 'Dillard College of Business',
             degree: 'Bachelor of Business Administration in Accounting',
-            details: 'Gained a comprehensive understanding of business principles and accounting practices, developing analytical and problem-solving skills.'
+            details: 'Gained a comprehensive understanding of business principles and accounting practices, developing analytical and problem-solving skills. Obtained Dean\'s List Honors for all semesters.',
+            website: 'https://www.mwsu.edu/'
         },
         {
-            school: 'Queen Mary University, London, England',
+            school: 'Queen Mary University',
+            location: 'London, England',
             program: 'International Business',
             degree: null,
-            details: 'Studied international business strategies and practices, gaining insights into global markets and cross-cultural communication.'
+            details: 'Studied international business strategies and practices, gaining insights into global markets and cross-cultural communication.',
+            website: 'https://www.qmul.ac.uk/'
         },
         {
-            school: 'Austin Community College, Austin, Texas',
+            school: 'Austin Community College',
+            location: 'Austin, Texas',
             program: null,
             degree: 'Associate of Science in Mathematics',
-            details: 'Developed a strong foundation in mathematical principles and problem-solving techniques, which are integral to my technical skills in software development.'
+            details: 'Developed a strong foundation in mathematical principles and problem-solving techniques, which are integral to my technical skills in software development.',
+            website: 'https://www.austincc.edu/'
         }
-    ];
+    ]
+    };
 
 
   return { tableOfContents, bonus, aboutMe, experience, contact, education }

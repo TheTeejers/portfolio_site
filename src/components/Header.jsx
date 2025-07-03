@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Header.css'
+import Content from '../Content'
 
 const Header = ({ contentSelected, setContentSelected }) => {
-  console.log(contentSelected)
+  // console.log(contentSelected)
   // Array of texts to cycle through for the h2 element
-  const texts = [
-    'Software Engineer',
-    'Support Engineer',
-    'Web Developer',
-    'Woodworker'
-  ]
+  const texts = Content().tableOfContents.workTitles
 
   // State to keep track of the current text index
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
@@ -53,17 +49,17 @@ const Header = ({ contentSelected, setContentSelected }) => {
   return (
     <header className='header-container'>
       <div className='header-left'>
-        <h1>TJ Loughry</h1>
-        <h2 className={isVisible ? 'fade-in' : 'fade-out'}>
+        <h1 className='header-name' onClick={() => setContentSelected(null)}>{Content().tableOfContents.myName}</h1>
+        {/* <h2 className={isVisible ? 'fade-in' : 'fade-out'}>
           {texts[currentTextIndex]}
-        </h2>
+        </h2> */}
       </div>
       <div className='navigation-div'>
-        <span onClick={() => setContentSelected('About')}>About</span>
-        <span onClick={() => setContentSelected('Experience')}>Experience</span>
-        <span onClick={() => setContentSelected('Education')}>Education</span>
-        <span onClick={() => setContentSelected('Projects')}>Projects</span>
-        <span onClick={() => setContentSelected('Contact')}>Contact</span>
+        <span onClick={() => setContentSelected('About')} className={contentSelected === 'About' ? 'active' : 'inactive'}>About Me</span>
+        <span onClick={() => setContentSelected('Experience')} className={contentSelected === 'Experience' ? 'active' : 'inactive'}>Experience</span>
+        <span onClick={() => setContentSelected('Education')} className={contentSelected === 'Education' ? 'active' : 'inactive'}>Education</span>
+        <span onClick={() => setContentSelected('Projects')} className={contentSelected === 'Projects' ? 'active' : 'inactive'}>Projects</span>
+        <span onClick={() => setContentSelected('Contact')} className={contentSelected === 'Contact' ? 'active' : 'inactive'}>Contact</span>
       </div>
     </header>
   )
