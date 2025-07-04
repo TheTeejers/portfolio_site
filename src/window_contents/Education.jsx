@@ -8,9 +8,10 @@ const Education = () => {
     <div>
       <h1 className='content-title'>{contentData.title}</h1>
       <div className='content-container'>
-        {contentData.institutions.map((institution, index) => (
-          <div className='institution-container' key={index}>
-            <div className='institution-info'>
+        <div className='text'>
+          {contentData.institutions.map((institution, index) => (
+            <div className='institution-container' key={index}>
+              <div className='institution-info'>
               <h2 className='institution-name'>
                 <a
                   href={institution.website}
@@ -25,8 +26,9 @@ const Education = () => {
             </div>
 
             <p>{institution.details}</p>
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
