@@ -27,9 +27,9 @@ const Content = () => {
     };
 
     const bonus = {
-        title: 'Hello World!!!',
+        title: 'A Little More About Me',
         paragraphs: [
-            <>I'd love to share a bit more about my background and interests outside of work. Aside from being passionate about web development, I'm also an avid woodworker. When I'm not coding, you'll probably find me in my workshop. </>,
+            <>I'd love to share a bit more about my background and interests outside of work. Aside from being passionate about web development, I'm also an avid woodworker. When I'm not coding, you'll probably find me in my workshop.</>,
             <>Woodworking is a big passion of mine—it's taught me patience, precision, and how to plan ahead. These skills come in handy when I'm working on web projects, helping me create well-thought-out and detailed applications.  There's something incredibly satisfying about taking raw materials and transforming them into something both functional and beautiful. This hobby has taught me a lot about patience, precision, and the importance of planning ahead, which I find translates really well into my coding projects.</>,
 
             <>When I'm working on a coding project, I often think about it in the same way I do a woodworking piece. I envision the final product, plan out how all the parts will come together, and pay close attention to the details to ensure everything fits perfectly. This mindset helps me write clean, efficient code and design intuitive user interfaces.</>,

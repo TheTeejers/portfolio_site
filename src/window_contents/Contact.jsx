@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div className='contact-container'>
-      <h1>{contentData.title}</h1>
+      <h1 className='content-title'>{contentData.title}</h1>
       <h2>Inquiries for my tech work</h2>
       <div className='contact-icons'>
         <a

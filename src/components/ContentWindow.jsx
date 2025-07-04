@@ -24,6 +24,9 @@ const ContentWindow = ({ contentSelected, setContentSelected }) => {
       const timer = setTimeout(() => {
         setCurrentContent(contentSelected)
         setIsVisible(true)
+        
+        // Scroll to top after content has actually changed
+        window.scrollTo({ top: 0, behavior: 'smooth' })
 
         // Remove animation class after fade in completes
         const fadeInTimer = setTimeout(() => {

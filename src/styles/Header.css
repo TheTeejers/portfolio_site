@@ -29,7 +29,7 @@ header {
 }
 
 .navigation-div span {
-  color: #00d8ff;
+  color: white;
   font-size: 1.5rem;
   font-weight: 500;
   -webkit-text-stroke: 0.5px black;
@@ -38,6 +38,7 @@ header {
   transition-duration: 1s;
   padding: 5px;
   border-radius: 10px;
+  text-shadow: 0 0 10px black;
 }
 
 .navigation-div .inactive:hover {
@@ -49,6 +50,8 @@ header {
 }
 
 .active {
+  color: #00d8ff;
+  text-shadow: 0 0 10px white;
   text-decoration: dashed underline overline #00d8ff 9px;
 }
 
@@ -66,16 +69,19 @@ h2 {
 }
 
 .header-name {
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   transition-timing-function: ease-in-out, cubic-bezier(0.29, 1.01, 1, -0.68);
   transition-duration: 1s;
   border-radius: 10px;
+  color: white;
+  text-shadow: 0 0 10px black;
 }
 
 .header-name:hover {
     cursor: pointer;
     background-color: #00d8ff;
     filter: drop-shadow(0 0 10px #00d8ff);
+    
     color: black;
     -webkit-text-stroke: 0.5px #00d8ff;
 }
@@ -87,33 +93,20 @@ h2 {
   color: #00d8ff;
   cursor: pointer;
   position: absolute;
-  right: 20px;
-  top: 18px;
+  right: 30px;
+  top: 0px;
   z-index: 1002;
   padding: 8px;
   border-radius: 8px;
   transition: background 0.2s;
+  filter: drop-shadow(0 0 10px black);
 }
 .hamburger-btn:focus {
   outline: 2px solid #00d8ff;
   background: rgba(0, 216, 255, 0.15);
 }
 
-@media (max-width: 768px) {
-  .navigation-div {
-    display: none;
-  }
-  .hamburger-btn {
-    display: block;
-  }
-  .header-container {
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    z-index: 1001;
-  }
-}
+
 
 .mobile-nav-dropdown {
   position: fixed;
@@ -201,6 +194,19 @@ body.menu-open {
   }
   h2 {
     font-size: 1.4em;
+  }
+  .navigation-div {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .header-container {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    z-index: 1001;
   }
 }
 
