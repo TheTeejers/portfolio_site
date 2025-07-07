@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Content from '../Content'
-// import '../styles/ContentWindow.css';
 
 const contentData = Content().experience
 
@@ -11,7 +10,7 @@ const Experience = () => {
       <div className='content-container'>
         <div className='text'>
           {contentData.experiences.map((experience, index) => (
-            <div key={index}>
+            <div className='experience-container' key={index}>
               {experience.company && (
                 <h2 className='company-name'>
                   <a

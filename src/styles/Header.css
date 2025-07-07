@@ -6,7 +6,6 @@ header {
   height: 70px;
   z-index: 1;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 0 20px;
   background-image: linear-gradient(to right, #1d91a2, transparent);
@@ -29,7 +28,6 @@ header {
 }
 
 .navigation-div span {
-  color: white;
   font-size: 1.5rem;
   font-weight: 500;
   -webkit-text-stroke: 0.5px black;
@@ -50,38 +48,24 @@ header {
 }
 
 .active {
-  color: #00d8ff;
   text-shadow: 0 0 10px white;
-  text-decoration: dashed underline overline #00d8ff 9px;
-}
-
-h1 {
-  margin: 0.5rem;
-  font-size: 3rem;
-  -webkit-text-stroke: 1px black;
-}
-
-h2 {
-  margin: 0.75rem;
-  font-size: 2rem;
-  font-weight: 600;
-  -webkit-text-stroke: 0.35px black;
+  border-bottom: 3px solid #00d8ff;
+  border-left: 3px solid #00d8ff;
+  border-top: 1px solid #00d8ff;
+  border-right: 1px solid #00d8ff;
 }
 
 .header-name {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition-timing-function: ease-in-out, cubic-bezier(0.29, 1.01, 1, -0.68);
   transition-duration: 1s;
   border-radius: 10px;
-  color: white;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 5px black;
 }
 
 .header-name:hover {
     cursor: pointer;
     background-color: #00d8ff;
     filter: drop-shadow(0 0 10px #00d8ff);
-    
     color: black;
     -webkit-text-stroke: 0.5px #00d8ff;
 }
@@ -105,8 +89,6 @@ h2 {
   outline: 2px solid #00d8ff;
   background: rgba(0, 216, 255, 0.15);
 }
-
-
 
 .mobile-nav-dropdown {
   position: fixed;
@@ -160,23 +142,12 @@ h2 {
   width: 100%;
   background: none;
   border: none;
-  color: #002b36;
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem 0;
   border-radius: 1rem;
   transition: background 0.2s, color 0.2s;
   cursor: pointer;
-}
-.mobile-nav-dropdown button.active,
-.mobile-nav-dropdown button:focus {
-  background: #00d8ff;
-  color: #111;
-  outline: 2px solid #fff;
-}
-.mobile-nav-dropdown button:hover {
-  background: #b4f6f6;
-  color: #111;
 }
 
 body.menu-open {
@@ -201,13 +172,6 @@ body.menu-open {
   .hamburger-btn {
     display: block;
   }
-  .header-container {
-    position: fixed;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    z-index: 1001;
-  }
 }
 
 @media (max-width: 480px) {
@@ -217,11 +181,6 @@ body.menu-open {
     flex-direction: column; /* Stack h1 and h2 vertically */
     justify-content: center;
   }
-  h1 {
-    font-size: 1.8em;
-  }
-  h2 {
-    font-size: 1.1em;
-    margin-top: 5px; /* Adjust margin for stacked elements */
-  }
+
+
 }

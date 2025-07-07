@@ -110,9 +110,7 @@ const Header = ({ contentSelected, setContentSelected }) => {
         <h1 className='header-name' onClick={() => setContentSelected(null)}>
           {Content().tableOfContents.myName}
         </h1>
-        {/* <h2 className={isVisible ? 'fade-in' : 'fade-out'}>
-          {texts[currentTextIndex]}
-        </h2> */}
+
       </div>
       {/* Desktop Navigation */}
       <div className='navigation-div'>
