@@ -110,7 +110,6 @@ const Header = ({ contentSelected, setContentSelected }) => {
         <h1 className='header-name' onClick={() => setContentSelected(null)}>
           {Content().tableOfContents.myName}
         </h1>
-
       </div>
       {/* Desktop Navigation */}
       <div className='navigation-div'>
@@ -132,7 +131,12 @@ const Header = ({ contentSelected, setContentSelected }) => {
         >
           Education
         </span>
-        {/* <span onClick={() => setContentSelected('Projects')} className={contentSelected === 'Projects' ? 'active' : 'inactive'}>Projects</span> */}
+        <span
+          onClick={() => setContentSelected('Projects')}
+          className={contentSelected === 'Projects' ? 'active' : 'inactive'}
+        >
+          Projects
+        </span>
         <span
           onClick={() => setContentSelected('Contact')}
           className={contentSelected === 'Contact' ? 'active' : 'inactive'}

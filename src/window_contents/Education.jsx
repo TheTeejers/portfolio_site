@@ -12,20 +12,23 @@ const Education = () => {
           {contentData.institutions.map((institution, index) => (
             <div className='institution-container' key={index}>
               <div className='institution-info'>
-              <h2 className='institution-name'>
-                <a
-                  href={institution.website}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  {institution.school}
-                </a>
-              </h2>
+                <h2 className='institution-name'>
+                  <a
+                    href={institution.website}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    {institution.school}
+                  </a>
+                </h2>
 
-              <h4 className='institution-degree'> {institution.degree} </h4>
-            </div>
+                {institution.degree ? (
+                  <h4 className='institution-degree'> {institution.degree} </h4>
+                ) : null}
+              </div>
+              <h4 className='institution-location'> {institution.location} </h4>
 
-            <p>{institution.details}</p>
+              <p>{institution.details}</p>
             </div>
           ))}
         </div>

@@ -83,6 +83,7 @@ const ContentWindow = ({ contentSelected, setContentSelected }) => {
         return (
           <div className='content-window'>
             <h1>Projects</h1>
+            <h2>Coming Soon!</h2>
           </div>
         )
       case 'Contact':

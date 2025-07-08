@@ -3,7 +3,6 @@ import Content from '../Content'
 import me_being_professional from '../assets/images/me-prof-2.png'
 
 const contentData = Content().aboutMe
-console.log(contentData)
 
 const About = ({ setContentSelected }) => {
   return (

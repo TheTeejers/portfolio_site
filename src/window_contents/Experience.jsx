@@ -24,7 +24,7 @@ const Experience = () => {
               )}
               <div className='title-dates'>
                 <h3 className='experience-title'>{experience.title}</h3>
-                <h4>{experience.dates}</h4>
+                <h4 className='experience-dates'>{experience.dates}</h4>
               </div>
               <ul>
                 {experience.responsibilities.map((responsibility, index) => (

@@ -57,7 +57,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
+
 
 }
 
@@ -141,14 +141,19 @@
   justify-content: space-between;
   height: 3rem;
   width: 90%;
-  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.institution-name {
+  padding: 0;
+  margin: 0;
 }
 
 .institution-sub-info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
 }
 
 .institution-sub-info h4 {
@@ -157,9 +162,11 @@
 }
 
 .institution-degree {
-  text-decoration: underline overline;
+  text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: #00d8ff;
+  padding: 0;
+  margin: 0;
 }
 
 .institution-container {
@@ -169,11 +176,19 @@
   justify-content: space-between;
   padding-bottom: 4rem;
   border-bottom: 1px solid rgba(0,216,255,0.2);
+}
 
+.institution-location {
+  margin-top: 0
 }
 
 .experience-container {
   border-bottom: 1px solid rgba(0,216,255,0.2);
+}
+
+.experience-title, .experience-dates {
+  margin: 0;
+  padding: 0;
 }
 /* Ensure links don't change color */
 a {
