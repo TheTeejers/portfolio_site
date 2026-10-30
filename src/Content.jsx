@@ -105,10 +105,10 @@ const Content = () => {
         title: 'Lead Software Engineer',
         dates: 'October 2025 - Present',
         responsibilities: [
-          'Architected a HIPAA-aware multi-tenant SaaS platform using FastAPI and React, implementing a control-plane registry to provision isolated PostgreSQL databases for client data security.'[cite: 1],
-          'Developed RESTful APIs with SQLAlchemy 2.0 and Node.js, enforcing role-based access control (RBAC) via AWS Cognito to protect health data privacy and integrity.'[cite: 1],
-          'Secured production cloud environments using AWS Secrets Manager and S3, ensuring zero data retention for Bedrock calls while maintaining strict PHI isolation.'[cite: 1],
-          'Automated testing and containerized production deployments by implementing GitHub Actions CI/CD pipelines for monorepos, optimizing release frequency.'[cite: 1]
+          'Architected a HIPAA-aware multi-tenant SaaS platform using FastAPI and React, implementing a control-plane registry to provision isolated PostgreSQL databases for client data security.',
+          'Developed RESTful APIs with SQLAlchemy 2.0 and Node.js, enforcing role-based access control (RBAC) via AWS Cognito to protect health data privacy and integrity.',
+          'Secured production cloud environments using AWS Secrets Manager and S3, ensuring zero data retention for Bedrock calls while maintaining strict PHI isolation.',
+          'Automated testing and containerized production deployments by implementing GitHub Actions CI/CD pipelines for monorepos, optimizing release frequency.'
         ]
       },
       {
